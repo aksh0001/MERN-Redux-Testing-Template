@@ -40,7 +40,7 @@ const Home = () => {
         foos exist!
       </h3>
       <CRUDTable
-        caption="Tasks"
+        caption="Foos"
         items={foosToRender}
       >
         <Fields>
