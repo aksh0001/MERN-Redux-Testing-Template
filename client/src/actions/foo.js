@@ -4,7 +4,9 @@
 import { toast } from 'react-toastify';
 
 import * as api from '../api';
-import { CREATE_FOO, FETCH_FOOS, FETCH_FOO, UPDATE_FOO, DELETE_FOO } from './types';
+import {
+  CREATE_FOO, FETCH_FOOS, FETCH_FOO, UPDATE_FOO, DELETE_FOO,
+} from './types';
 
 /**
  * This action creator will be called to create a foo.

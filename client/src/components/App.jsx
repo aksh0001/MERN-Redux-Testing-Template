@@ -8,15 +8,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Home from './home/Home';
 
-const App = () => {
-  return (
-    <>
-      <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch>
-      <ToastContainer />
-    </>
-  );
-};
+const App = () => (
+  <>
+    <Switch>
+      <Route path="/" exact component={Home} />
+    </Switch>
+    <ToastContainer />
+  </>
+);
 
 export default App;

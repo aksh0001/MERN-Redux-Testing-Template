@@ -19,12 +19,12 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "testcov": "npm run test -- --coverage --watchAll=false",
-    "lint": "eslint \"src/**/*.js\""
+    "lint": "eslint \"src/**/*.js*\""
   },
   "eslintConfig": {
     "extends": [

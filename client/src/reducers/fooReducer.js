@@ -1,7 +1,9 @@
 /**
  * This file exports our foo reducer that will handle all dispatched foo-related actions.
  */
-import { CREATE_FOO, FETCH_FOOS, FETCH_FOO, UPDATE_FOO, DELETE_FOO } from '../actions/types';
+import {
+  CREATE_FOO, FETCH_FOOS, FETCH_FOO, UPDATE_FOO, DELETE_FOO,
+} from '../actions/types';
 
 const INITIAL_FOO_STATE = [];
 
@@ -21,9 +23,9 @@ const fooReducer = (state = INITIAL_FOO_STATE, action) => {
     case FETCH_FOO:
       return [...state, action.payload];
     case UPDATE_FOO:
-      return state.map(foo => (foo._id === action.payload._id ? action.payload : foo));
+      return state.map((foo) => (foo._id === action.payload._id ? action.payload : foo));
     case DELETE_FOO:
-      return state.filter(foo => foo._id !== action.payload);
+      return state.filter((foo) => foo._id !== action.payload);
     default:
       return state;
   }
